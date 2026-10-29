@@ -1,0 +1,159 @@
+<resources>
+    <string name="app_name">RepCheck</string>
+    <string name="offline_note">Tests are recorded and analysed on this phone. No internet needed.</string>
+    <string name="camera_permission_needed">Camera access is needed to record your test.</string>
+
+    <!-- Home -->
+    <string name="edit">Edit</string>
+    <string name="section_tests">Take a test</string>
+    <string name="section_recent">Recent attempts</string>
+    <string name="no_results">No attempts yet. Pick a test above to get started.</string>
+    <string name="athlete_details">%1$d yrs · %2$s · %3$s</string>
+    <string name="ex_sit_ups">Sit-ups</string>
+    <string name="ex_push_ups">Push-ups</string>
+    <string name="ex_squats">Squats</string>
+    <string name="ex_vertical_jump">Vertical jump</string>
+
+    <string name="history">History</string>
+    <string name="badges_button">Badges · %1$d/%2$d</string>
+
+    <!-- History -->
+    <string name="history_title">Your progress</string>
+    <string name="chart_legend">● verified  ○ not verified  - - benchmark lines</string>
+    <string name="stat_best">Personal best</string>
+    <string name="stat_attempts">Attempts</string>
+    <string name="stat_rating">Latest rating</string>
+    <string name="section_attempts">Attempts</string>
+    <string name="history_empty">No attempts at this test yet.</string>
+
+    <!-- Badges -->
+    <string name="badges_title">Badges</string>
+    <string name="badge_count">%1$d of %2$d earned. Only verified attempts count.</string>
+
+    <!-- Cloud sync -->
+    <string name="sync_off">Offline mode. Cloud sync isn\'t set up in this build.</string>
+    <string name="sync_signed_out">Sign in to send your results to SAI. %1$d waiting.</string>
+    <string name="sync_done">Signed in as %1$s · all results uploaded ✓</string>
+    <string name="sync_pending">Signed in as %1$s · %2$d waiting to upload (sends when online)</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
+
+    <!-- Login -->
+    <string name="login_title">Sign in</string>
+    <string name="login_subtitle">Athletes sign in to send verified results to SAI. Officials sign in to review them.</string>
+    <string name="login_athlete_note">SAI officials: choose \"SAI official\" above.</string>
+    <string name="login_official_note">The official access code comes from your SAI administrator. Already an official? Leave it blank and sign in. Signing in with an athlete account and the code turns it into an official account.</string>
+    <string name="mode_athlete">Athlete</string>
+    <string name="mode_official">SAI official</string>
+    <string name="hint_access_code">Official access code</string>
+    <string name="create_official">Register as official</string>
+    <string name="err_code_required">Enter the official access code</string>
+    <string name="err_code_wrong">That official access code isn\'t right. Check it with your SAI administrator.</string>
+    <string name="err_need_code_upgrade">This is an athlete account. Enter the official access code to make it an official account.</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="create_account">Create athlete account</string>
+    <string name="cloud_not_configured">Cloud sync isn\'t set up in this build. Add google-services.json (see FIREBASE_SETUP.md) and rebuild.</string>
+    <string name="err_email">Enter a valid email</string>
+    <string name="err_password">At least 6 characters</string>
+    <string name="err_email_taken">An account with this email already exists. Sign in instead.</string>
+    <string name="err_credentials">Wrong email or password.</string>
+    <string name="err_generic">Something went wrong.</string>
+    <string name="err_role_unknown">This account\'s role is \"%1$s\". In Firebase → Firestore → users, set role to exactly official or athlete (lowercase, no spaces).</string>
+    <string name="official_sign_in">Are you an SAI official? Sign in</string>
+
+    <!-- Officials -->
+    <string name="official_title">Submissions</string>
+    <string name="official_summary">%1$d total · %2$d flagged · %3$d need review · %4$d not yet reviewed</string>
+    <string name="official_loading">Loading submissions…</string>
+    <string name="official_empty">Nothing here.</string>
+    <string name="official_error">Couldn\'t load: %1$s</string>
+    <string name="filter_all">All</string>
+    <string name="filter_to_review">To review</string>
+    <string name="filter_flagged">Flagged</string>
+    <string name="filter_verified">Verified</string>
+    <string name="not_reviewed">Not reviewed</string>
+    <string name="submission_title">Submission</string>
+    <string name="clock_warning">Phone date was ahead of the server\'s, so the recording date may be faked</string>
+    <string name="recorded_at">Recorded: %1$s (phone clock)</string>
+    <string name="received_at">Received: %1$s (server)</string>
+    <string name="frames_line">Athlete in %1$d of %2$d analysed frames · %3$.0f fps</string>
+    <string name="review_line">Reviewed: %1$s by %2$s</string>
+    <string name="review_note_hint">Note (optional)</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="close">Close</string>
+    <string name="review_saved">Review saved</string>
+
+    <!-- Leaderboard -->
+    <string name="leaderboard_button">🏆 Leaderboard</string>
+    <string name="leaderboard_title">Leaderboard</string>
+    <string name="leaderboard_opt_in">Show me on leaderboards</string>
+    <string name="leaderboard_opt_in_note">Only your first name, last initial, district and age group are shown. Only verified results count.</string>
+    <string name="scope_group">My group</string>
+    <string name="scope_state">My state</string>
+    <string name="scope_all">Everyone</string>
+    <string name="scope_group_desc">%1$s, %2$s: the fairest comparison</string>
+    <string name="scope_state_desc">Everyone in %1$s</string>
+    <string name="scope_state_missing">Add your state in your profile to use this.</string>
+    <string name="scope_all_desc">All ages and genders</string>
+    <string name="leaderboard_loading">Loading…</string>
+    <string name="leaderboard_error">Couldn\'t load the leaderboard: %1$s</string>
+    <string name="leaderboard_empty">No one here yet. Verified results appear after they upload.</string>
+    <string name="leaderboard_empty_opt_in">No one here yet. Turn on \"Show me on leaderboards\" in your profile to be the first.</string>
+    <string name="leaderboard_not_opted_in">You\'re not on the leaderboard. Turn it on in your profile.</string>
+    <string name="leaderboard_sign_in">Sign in from the home screen to see leaderboards.</string>
+    <string name="leaderboard_offline_build">Leaderboards need cloud sync, which isn\'t set up in this build.</string>
+    <string name="leaderboard_you">%1$s (you)</string>
+
+    <!-- Profile -->
+    <string name="profile_title_new">Create your profile</string>
+    <string name="profile_title_edit">Edit profile</string>
+    <string name="profile_subtitle">Used to compare your results with athletes of your age and gender.</string>
+    <string name="hint_name">Full name</string>
+    <string name="hint_dob">Date of birth</string>
+    <string name="hint_gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="hint_height">Height</string>
+    <string name="hint_weight">Weight</string>
+    <string name="hint_state">State</string>
+    <string name="hint_district">District</string>
+    <string name="save">Save</string>
+    <string name="err_name">Enter your name</string>
+    <string name="err_dob">Pick your date of birth</string>
+    <string name="err_height">80–250 cm</string>
+    <string name="err_weight">15–200 kg</string>
+
+    <!-- Record -->
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+    <string name="cancel">Cancel</string>
+    <string name="flip">Flip</string>
+    <string name="framing_ok">● In frame</string>
+    <string name="framing_bad">● Not fully in frame</string>
+    <string name="no_camera">No camera found on this device. On an emulator: Device Manager → Edit → Show Advanced Settings → set Camera to Emulated or Webcam.</string>
+    <string name="camera_unavailable">Couldn\'t start the camera (%1$s). Close other apps using the camera and try again.</string>
+    <string name="too_short">Too short. Record at least 3 seconds.</string>
+
+    <!-- Analysis -->
+    <string name="analysing">Analysing…</string>
+    <string name="analysing_pct">Analysing… %1$d%%</string>
+    <string name="analysing_note">Your video is being checked on this phone.\nThis takes a few seconds.</string>
+    <string name="valid_reps">valid reps</string>
+    <string name="video_stats">Video length: %1$.1f s\nAthlete in frame: %2$d%%</string>
+    <string name="hash_label">Video fingerprint: %1$s…</string>
+    <string name="analysis_failed">Analysis failed</string>
+    <string name="rating_heading">Compared with your age group</string>
+    <string name="rating_group">Benchmark group: %1$s</string>
+    <string name="rating_provisional">Provisional benchmark, to be replaced with official SAI norms.</string>
+    <string name="rating_not_verified_title">Not rated</string>
+    <string name="rating_not_verified">Attempts are rated only once they\'re verified.</string>
+    <string name="rating_none_title">No rating</string>
+    <string name="rating_no_benchmark">This test isn\'t part of the SAI battery, so there\'s no benchmark for it.</string>
+    <string name="rating_no_group">There\'s no benchmark for your age and gender group yet.</string>
+    <string name="new_badges">🎉 New badge!</string>
+    <string name="retake">Retake</string>
+    <string name="done">Done</string>
+</resources>
