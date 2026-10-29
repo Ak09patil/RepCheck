@@ -259,18 +259,3 @@ app/src/main/java/com/repcheck/app/
 - [x] Video integrity: frame timing, length check, splice and person-swap detection
 - [x] Leaderboards (opt-in, server-verified scores) and app icon
 
-## Real-device test plan
-
-Do these on a real phone before the demo. Each line is something an examiner might try.
-
-1. **Sit-ups:** 10 clean reps → Verified, count 10. Then 5 half-reps → listed as Partial, not counted.
-2. **Push-ups with sagging hips** → Form issues.
-3. **Vertical jump:** 3 jumps against a wall with a tape measure; compare with the app (expect a few cm).
-4. **Tucked jump** (knees up in the air) → not counted.
-5. **Walk out of frame for half the test** → Needs review.
-6. **Leave the app mid-recording** → attempt discarded.
-7. **Airplane mode:** record a test, then reconnect → uploads automatically (after Firebase setup).
-8. **Official account:** approve one submission, reject one with a note.
-   Reject a submission that's on the leaderboard → it disappears; the athlete's next-best appears after their next sync.
-9. **Leaderboard:** turn on "Show me on leaderboards" in the profile, record a verified test, check you appear (with medal and highlight).
-10. **Tune thresholds** in `ExerciseType.java` (rep angles) if your counts are off on real people.
